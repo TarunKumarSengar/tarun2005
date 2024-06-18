@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    
+    .menu-bar{
+        background : indianred;
+        text-align: center;
+    }
+
+    .menu-bar ul{
+        display: inline-flex;
+        list-style: none;
+        color: #fff;
+    }
+
+    .menu-bar ul li{
+        padding: 15px;
+        margin: 15px;
+        width: 120px;
+    }
+    .menu-bar ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+.active, .menu-bar ul li:hover{
+background: indianred;
+border-radius: 3px;
+}
+
+.menu-bar .fa{
+margin-right: 8px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    background: indianred;
+    margin-top: 16px;
+    margin-left: -18px;
+    position: absolute;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+display: block;
+margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: yellow;
+    
+}
+</style>
+<body>
+
+   <div class="menu-bar">
+    <ul>
+
+        <li class="active"><a href="#" ><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>About Us</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </div>
+        </li>
+        <li><a href="#"><i class="fa fa-clone" aria-hidden="true"></i>Courses</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Web Designing</a></li>
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Phyton</a></li>
+                </ul>
+            </div>
+        
+        </li>
+        <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>Client</a></li>
+        <li><a href="#"><i class="fa fa-angellist" aria-hidden="true"></i>Investors</a></li>
+        <li><a href="#"><i class="fa fa-inr" aria-hidden="true"></i>Pricing</a></li>
+        <li><a href="#"><i class="fa fa-edit" aria-hidden="true"></i>Training</a></li>
+        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+    </ul>
+    
+   </div>
+</body>
+</html>
